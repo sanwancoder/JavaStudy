@@ -1,4 +1,4 @@
-package com.kinsey.woo.java8.study.thread.createmethod;
+package com.kinsey.woo.study.thread.createmethod;
 
 public class CreateThreadByRunnable implements  Runnable {
 

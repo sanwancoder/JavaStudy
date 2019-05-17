@@ -1,4 +1,4 @@
-package com.kinsey.woo.java8.study.optional;
+package com.kinsey.woo.study.java8.optional;
 
 import java.util.Optional;
 
