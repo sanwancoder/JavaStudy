@@ -1,4 +1,4 @@
-package com.kinsey.woo.study.thread.createmethod;
+package com.wyfdc.go.javabase.thread.createmethod;
 
 
 public class MainTest {

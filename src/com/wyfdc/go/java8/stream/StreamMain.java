@@ -1,4 +1,4 @@
-package com.kinsey.woo.study.java8.stream;
+package com.wyfdc.go.java8.stream;
 
 import java.util.Arrays;
 import java.util.List;
