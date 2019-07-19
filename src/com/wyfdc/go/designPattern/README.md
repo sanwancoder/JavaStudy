@@ -1,1 +1,2 @@
-- https://blog.csdn.net/itachi85/article/details/50510124
+- [设计模式（二）单例模式的七种写法](https://blog.csdn.net/itachi85/article/details/50510124)
+- [单例模式 菜鸟教程](https://www.runoob.com/design-pattern/singleton-pattern.html)
