@@ -5,7 +5,7 @@ public class TemplatePatternDemo {
 
     Game game = new BasketBall();
     game.play();
-    System.out.println();
+    System.out.println("---------------------------------------------");
     game = new Football();
     game.play();
   }
