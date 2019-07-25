@@ -3,7 +3,7 @@ package com.wyfdc.go.designPattern.observerPattern;
 import java.util.Vector;
 
 /**
- * @Author: wuqing
+ * @Author:  
  */
 public abstract class Observable {
   //观察者数组

@@ -1,7 +1,7 @@
 package com.wyfdc.go.designPattern.observerPattern;
 
 /**
- * @Author: wuqing
+ * @Author:  
  */
 public interface Observer {
   //观察者接口

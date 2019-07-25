@@ -11,7 +11,7 @@ package com.wyfdc.go.designPattern.Singleton;
  *
  * 描述：这种方式采用双锁机制，安全且在多线程情况下能保持高性能。
  * getInstance() 的性能对应用程序很关键。
- * @Author: wuqing
+ * @Author:  
  */
 public class Singleton4 {
   private volatile static Singleton4 singleton4;

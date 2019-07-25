@@ -11,7 +11,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 /**
- * @Author: wuqing
+ * @Author:  
  */
 public class method1_Element {
 
