@@ -5,5 +5,5 @@ package com.wyfdc.go.designPattern.observerPattern;
  */
 public interface Observer {
   //观察者接口
-  public void update(Object object);
+  void update(Object object);
 }
