@@ -22,7 +22,7 @@ public class QuickSort {
 
     public static void sort(int[] arr, int start, int end) {
         if (start < end) {
-            int index = Partition(arr, start, end);
+            int index = Partition(arr, start, end);   //index位置数据是OK的
             sort(arr, start, index - 1);
             sort(arr, index + 1, end);
         }

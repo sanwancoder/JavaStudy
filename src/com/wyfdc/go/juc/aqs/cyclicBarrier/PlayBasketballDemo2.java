@@ -7,7 +7,7 @@ import java.util.concurrent.CyclicBarrier;
 /**
  * 热身运动
  */
-public class PlayBasketballDemo {
+public class PlayBasketballDemo2 {
 
     private static final int THREAD_NUM = 3;
 
@@ -30,8 +30,8 @@ public class PlayBasketballDemo {
         /**
          * 注意比较两者的下面两行代码结果异同
           */
-        for (int i = 0; i < names.length-1; i++) {   //输出 人都到齐了,开始热身运动 两次；如果不减一的话 有一个线程会一直等待着
-//        for (int i = 0; i < THREAD_NUM; i++) {  //输出 人都到齐了,开始热身运动 一次
+        for (int i = 0; i < names.length; i++) {
+            //输出 人都到齐了,开始热身运动 两次；如果不减一的话 有一个线程会一直等待着
             if (i < THREAD_NUM - 1) {
                 Thread t = new Thread(new MyTask(barrier, names[i]), "线程名" + i);
                 t.start();

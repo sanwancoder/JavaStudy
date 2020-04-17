@@ -7,7 +7,7 @@ import java.util.concurrent.CyclicBarrier;
 /**
  * 热身运动
  */
-public class PlayBasketballDemo {
+public class PlayBasketballDemo3 {
 
     private static final int THREAD_NUM = 3;
 
@@ -27,37 +27,31 @@ public class PlayBasketballDemo {
             }
         });
 
-        /**
-         * 注意比较两者的下面两行代码结果异同
-          */
-        for (int i = 0; i < names.length-1; i++) {   //输出 人都到齐了,开始热身运动 两次；如果不减一的话 有一个线程会一直等待着
-//        for (int i = 0; i < THREAD_NUM; i++) {  //输出 人都到齐了,开始热身运动 一次
+        PlayBasketballDemo3 demo3 = new PlayBasketballDemo3();
+
+        for (int i = 0; i < names.length; i++) {
+            //输出 人都到齐了,开始热身运动 两次；如果不减一的话 有一个线程会一直等待着
+            final int index = i;
             if (i < THREAD_NUM - 1) {
-                Thread t = new Thread(new MyTask(barrier, names[i]), "线程名" + i);
-                t.start();
+                /*Thread t = new Thread(new MyTask(barrier, names[i]), "线程名" + i);
+                t.start();*/
+                new Thread(()->{
+                    demo3.leaveRoom(barrier,names[index]);
+                }).start();
             } else {
                 // 最后一个线程延迟3秒执行
                 Thread.sleep(3000);
-                Thread t = new Thread(new MyTask(barrier, names[i]));
-                t.start();
+                /*Thread t = new Thread(new MyTask(barrier, names[i]));
+                t.start();*/
+                new Thread(()->{
+                    demo3.leaveRoom(barrier,names[index]);
+                }).start();
             }
         }
     }
 
 
-    static class MyTask extends Thread {
-
-        private CyclicBarrier barrier;
-
-        private String name;
-
-        public MyTask(CyclicBarrier barrier, String name) {
-            this.barrier = barrier;
-            this.name = name;
-        }
-
-        @Override
-        public void run() {
+    public void leaveRoom(CyclicBarrier barrier, String name)  {
             int time = random.nextInt(1000);
             System.out.println(name + " 从宿舍出发");
             try {
@@ -76,8 +70,6 @@ public class PlayBasketballDemo {
                 e.printStackTrace();
             }
             System.out.println(name + " 开始热身");
-        }
-
     }
 
 }

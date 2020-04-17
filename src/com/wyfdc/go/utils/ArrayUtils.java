@@ -2,7 +2,7 @@ package com.wyfdc.go.utils;
 
 import java.util.Arrays;
 
-public class ArrayUtils {
+public class ArrayUtils<T> {
 
     public static void main(String[] args) {
         int[] arr = {1,2,4,5,6,7,7};

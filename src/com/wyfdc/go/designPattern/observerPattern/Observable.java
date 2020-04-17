@@ -24,7 +24,6 @@ public abstract class Observable {
   public void notifyAllOberver(Book book){
     obVector.forEach(observer -> {
       observer.update(book);
-
     });
   }
 

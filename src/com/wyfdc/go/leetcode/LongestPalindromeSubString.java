@@ -19,7 +19,6 @@ public class LongestPalindromeSubString {
      * @return
      */
     public static String longestPalindrome(String s){
-
         int len = s.length();
         if(len<2){
             return s;
@@ -40,13 +39,8 @@ public class LongestPalindromeSubString {
                     end = i;
                     start = j;
                 }
-
-
-
             }
         }
         return s.substring(start,end+1);
-
-
     }
 }
