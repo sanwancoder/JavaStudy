@@ -32,7 +32,6 @@ public class MaxSumTest {
         if (arr == null || arr.length == 0) {
             return 0;
         }
-
         int res = arr[0];
         int max = arr[0];
         int lt = 0;
