@@ -1,23 +1,19 @@
-package com.wyfdc.go.leetcode.hw;
+package com.wyfdc.go.leetcode.interview.hw;
 
 import java.util.Scanner;
 
 /**
- * 没有保证输入顺序
+ * 效率没有M1 高
  */
-public class UniqueCharSeq_M2 {
+public class UniqueCharSeq_M3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         while (in.hasNext()) {
             char[] c = in.next().toCharArray();
             StringBuffer sb = new StringBuffer();
-            int[] chars = new int[255];
-            for (int i = 0; i < c.length; i++) {
-                chars[c[i]] = 1;
-            }
-            for(int i=0;i<255;i++){
-                if(chars[i]==1){
-                    sb.append((char)i);
+            for(int i=0;i<c.length;i++){
+                if(!sb.toString().contains(String.valueOf(c[i]))){  //
+                    sb.append(c[i]);
                 }
             }
             System.out.println(sb.toString());

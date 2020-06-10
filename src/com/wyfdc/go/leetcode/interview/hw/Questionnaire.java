@@ -1,4 +1,4 @@
-package com.wyfdc.go.leetcode.hw;
+package com.wyfdc.go.leetcode.interview.hw;
 
 
 import java.util.Iterator;

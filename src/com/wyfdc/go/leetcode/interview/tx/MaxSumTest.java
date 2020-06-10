@@ -1,4 +1,4 @@
-package com.wyfdc.go.leetcode.tx;
+package com.wyfdc.go.leetcode.interview.tx;
 
 /**
  * 给定一个数组 array[1, 4, -5, 9, 8, 3, -6]，在这个数字中有多个连续子数组，
