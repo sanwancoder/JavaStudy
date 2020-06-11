@@ -18,7 +18,7 @@ class B extends A{
     }
 }
 
-public class ClassBA {
+public class ClassBExtendsA {
 
     // 1a2b2b
     public static void main(String[] args) {
