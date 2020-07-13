@@ -1,7 +1,9 @@
 package com.wyfdc.go.javabase.collection;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * @Author:
@@ -19,6 +21,14 @@ public class ArrayListTest {
     arrayList.add(5);
     arrayList.add(7);
     arrayList.add(9);
+
+    List<Integer> arrayList1 = arrayList.subList(2,3);
+    System.out.println(Arrays.toString(arrayList.toArray()));
+    System.out.println(Arrays.toString(arrayList1.toArray()));
+    System.out.println("==========================================");
+
+
+
     System.out.printf("After add:arrayList.size() = %d\n",arrayList.size());
 
     System.out.println("Printing elements of arrayList");
